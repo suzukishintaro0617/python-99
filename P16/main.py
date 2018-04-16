@@ -1,6 +1,6 @@
 def drop(x,y):
     ret=[]
-    for X in x:
-        if(X % y != 0):
-            ret=ret+[X]
+    for X in range(len(x)):
+        if((X+1) % y != 0):
+            ret=ret+[x[X]]
     return ret
