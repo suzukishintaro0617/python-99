@@ -1,4 +1,5 @@
 def split(x,y):
     ret=[]
-    ret=[x[:y]]+[x[y:]]
+    ret.append(x[:y])
+    ret.append(x[y:])
     return ret
