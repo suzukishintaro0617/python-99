@@ -7,5 +7,5 @@ def encode(x):
             ret_a[-1].append(X)
         ret_b=[]
         for Y in ret_a:
-            ret_b=ret_b+[[len(Y),Y[0]]]
+            ret_b=ret_b+[len(Y),Y[0]]
     return ret_b
