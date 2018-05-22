@@ -3,21 +3,21 @@ def lsort(x):
     return x
 
 def lfsort(x):
-    ret = []
+    list = []
     for i in x:
-        if ret == []:
-            ret.append([i])
+        if list == []:
+            list.append([i])
         else:
             is_added = False
-            for j in ret:
+            for j in list:
                 if len(j[-1]) == len(i):
                     j.append(i)
                     is_added = True
             if is_added == False:
-                ret.append([i])
-    ret.sort(key = len)
+                list.append([i])
+    list.sort(key = len)
 
     flat = []
-    for k in ret:
+    for k in list:
         flat = flat + k
     return(flat)
