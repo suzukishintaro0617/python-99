@@ -1,13 +1,13 @@
 def encode(x):
-    ret_a=[]
+    list_a=[]
     for i in x:
-        if ( ret_a == [] or ret_a[-1][-1] != i ):
-            ret_a = ret_a + [[i]]
+        if ( list_a == [] or list_a[-1][-1] != i ):
+            list_a = list_a + [[i]]
         else:
-            ret_a[-1].append(i)
+            list_a[-1].append(i)
 
-        ret_b = []
-        for j in ret_a:
-            ret_b = ret_b + [[len(j),j[0]]]
+        list_b = []
+        for j in list_a:
+            list_b = list_b + [[len(j),j[0]]]
 
-    return ret_b
+    return list_b
